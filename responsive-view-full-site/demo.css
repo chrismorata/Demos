@@ -1,0 +1,21 @@
+body{ padding-bottom: 30px; }
+ul{ margin: 0 0 30px; padding: 0; list-style: none; overflow: hidden; }
+ul li{ background-color: #ccc; min-height: 150px; margin-bottom: 15px; }
+ul li h2{ margin: 10px; }
+
+#view-full{ background-color: #222; color: #fff; font-size: 16px; font-weight: bold; padding: 8px 16px; -moz-border-radius: 8px; border-radius: 8px; }
+
+pre{ display: none; }
+
+@media screen and (min-width: 600px){
+    ul li{ float: left; width: 30%; margin-left: 5%; }
+    ul li:first-child{ margin-left: 0; }
+    
+    #view-full{ display: none; }
+}
+
+@media screen and (min-width: 1024px){
+    ul li{ background-color: #cc0000; color: #fff; }
+    
+    pre{ display: block; }
+}
