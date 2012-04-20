@@ -10,15 +10,15 @@
     
     <title><?php echo $this->title; ?> | Creative and Code</title>
     
-    <link rel="stylesheet" type="text/css" href="/demos/_resources/css/demo-template.css" />
-    <link rel="stylesheet" type="text/css" href="/demos/_resources/css/prettify-sunburst.css" />
+    <link rel="stylesheet" type="text/css" href="../_resources/css/demo-template.css" />
+    <link rel="stylesheet" type="text/css" href="../_resources/css/prettify-sunburst.css" />
     <?php 
         foreach( $this->css as $css ){
             echo '<link rel="stylesheet" type="text/css" href="'.$css.'" />';
         }
     ?>
     
-    <script src="/demos/_resources/js/modernizr-2.5.2.min.js"></script>    
+    <script src="../_resources/js/modernizr-2.5.2.min.js"></script>    
     
     <script type="text/javascript">
     
@@ -54,8 +54,8 @@
     
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/demos/_resources/js/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="/demos/_resources/js/prettify/prettify.js"></script>
+    <script>window.jQuery || document.write('<script src="../_resources/js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="../_resources/js/prettify/prettify.js"></script>
     <script>
         window.onload = prettify();
     </script>
