@@ -57,7 +57,7 @@
     <script>window.jQuery || document.write('<script src="../_resources/js/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="../_resources/js/prettify/prettify.js"></script>
     <script>
-        window.onload = prettify();
+        window.onload = prettyPrint();
     </script>
     <?php 
         foreach( $this->js as $js ){
