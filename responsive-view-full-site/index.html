@@ -6,33 +6,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="<?php echo $this->description; ?>" />
+    <meta name="description" content="Add a view full site link for visitors who want to see the desktop version of your web page." />
     
-    <title><?php echo $this->title; ?> | Creative and Code</title>
+    <title>View Full Site for Responsive Web Design | Creative and Code</title>
     
     <link rel="stylesheet" type="text/css" href="../_resources/css/demo-template.css" />
     <link rel="stylesheet" type="text/css" href="../_resources/css/prettify-sunburst.css" />
-    <?php 
-        foreach( $this->css as $css ){
-            echo '<link rel="stylesheet" type="text/css" href="'.$css.'" />';
-        }
-    ?>
-    
+    <link rel="stylesheet" type="text/css" href="demo.css" />    
     <script src="../_resources/js/modernizr-2.5.2.min.js"></script>    
-    
-    <script type="text/javascript">
-    
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-30232257-1']);
-      _gaq.push(['_trackPageview']);
-    
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    
-    </script>
     
 </head>
 
@@ -40,17 +21,27 @@
     
     <article>
     
-        <?php if($this->showInfo){ ?>
         <header>    
-            <h1><?php echo $this->title; ?></h1>
-            <p><?php echo $this->description; ?></p>
+            <h1>View Full Site for Responsive Web Design</h1>
+            <p>Add a view full site link for visitors who want to see the desktop version of your web page.</p>
         </header>
-        <?php } ?>
+                
+        <p><em>Please note: make sure you are viewing this demo from a mobile device.</em></p>
         
-        <?php echo $this->content; ?>
-
-    </article>
+        <br />
+        <ul>
+            <li>
+                <h2>Content</h2>
+            </li>
+            <li>
+                <h2>Content</h2>
+            </li>
+            <li>
+                <h2>Content</h2>
+            </li>
+        </ul>
         
+        <span id="view-full">View Full Site</span>
     
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -59,11 +50,7 @@
     <script>
         window.onload = prettyPrint();
     </script>
-    <?php 
-        foreach( $this->js as $js ){
-            echo '<script type="text/javascript" src="'.$js.'"></script>';
-        }
-    ?>
-    
+    <script type="text/javascript" src="demo.js"></script>    
 </body>
 </html>
+    
